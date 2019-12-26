@@ -1,12 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import Sidebar from "./Components/Sidebar";
+import MainContent from "./Components/MainContent";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import "./styles.css";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+function App() {
+  let [tab, setTab] = useState("Education");
+  function handleTabSelection(selected) {
+    console.log("handle tab selection called", selected);
+    setTab(selected);
+  }
+
+  return (
+    <div className="App">
+      <div className=" side column">
+        <div>Photo</div>
+        <div className="nav">
+          <Sidebar handle={handleTabSelection} />
+        </div>
+      </div>
+      <div className=" main column">
+        {/* <div className='header'>header</div> */}
+        <div className='mainContent'>
+          <MainContent  tab={tab} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);

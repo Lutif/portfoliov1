@@ -1,0 +1,22 @@
+button{
+  color: red;
+}
+
+.navitems{
+  background-color: #3a3535;
+  color:grey;
+  display: block;
+  width:120%;
+  font-size: 2rem;
+  margin:10px -20px;
+}
+.navitems:hover{
+  background-color: #3a3535;
+  color:white;
+
+}
+
+.story{
+  font-family: 'Caveat', cursive;
+/* handwritting style for story */
+}

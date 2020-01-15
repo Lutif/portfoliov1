@@ -16,34 +16,26 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 10px 15px;
+  height: 100vh;
 }
 
 .side {
   flex-grow: 1;
-  width:120px;
+  width:80px;
   height: auto;
-  background-color: #015668;
+  background-color:#4285f4;
 }
 .nav{
   margin-top: 100px;
   height: 80%;
+z-index: 2;
 
 }
 .main {
   flex-grow: 3;
   width: 60%;
-  background-color:white}
-.header{
-  height: 100px;
-  background-color: #015668;
-margin-left: -30px;
-margin-top:-10px;
-margin-right:-15px;
-
+  height: 100%;
+  padding :120px;
+  box-sizing: border-box;
 }
 
-.mainContent {
-margin-top: 10%;
-  font-size: 1.5rem;
-}

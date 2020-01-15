@@ -1,0 +1,46 @@
+body {
+    height: 100%;
+  }
+  .App {
+    height: 100%;
+  }
+  .projectContainer {
+    position: relative;
+    display: flex;
+    border: 5px solid blue;
+    height: 100%;
+    width: 100%;
+  }
+  .projectImage {
+    height: 100;
+    border: 5px solid red;
+    width: 50%;
+  }
+  .projectDescription {
+    border: 5px solid red;
+    width: 50%;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .carousel {
+    display: flex;
+    border: 2px solid red;
+    height: 100%;
+    width:100%;
+    align-items: center;
+
+  }
+  
+  .arrow {
+    position: relative;
+    border: 2px solid rgb(19, 3, 19);
+    font-size: 2rem;
+  }
+  
+  .arrow.left{
+    left: 40px;
+  }
+  .arrow.right{
+    right: 40px;
+  }

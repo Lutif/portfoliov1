@@ -7,7 +7,7 @@ let styles={
 function Sidebar(props){
 
 
-let [tablist, setTablist]=useState(['Home','Story','Education','Skills','Hire Me','Resume']);
+let [tablist, setTablist]=useState(['Home','Education','Skills','Projects','Hire Me','Resume']);
 
 function handleClick(event){
   // console.log(event.target.value);

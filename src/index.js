@@ -6,7 +6,7 @@ import MainContent from "./Components/MainContent";
 import "./styles.css";
 
 function App() {
-  let [tab, setTab] = useState("Education");
+  let [tab, setTab] = useState("Projects");
   function handleTabSelection(selected) {
     console.log("handle tab selection called", selected);
     setTab(selected);
@@ -21,10 +21,8 @@ function App() {
         </div>
       </div>
       <div className=" main column">
-        {/* <div className='header'>header</div> */}
-        <div className='mainContent'>
           <MainContent  tab={tab} />
-        </div>
+        
       </div>
     </div>
   );
